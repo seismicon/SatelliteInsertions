@@ -22,9 +22,5 @@ Optional parameters:
 
 Python package requirements:
 
-sys\
-getopt\
-time\
-pysam\
-collections\
-regex
+sys, getopt, time, pysam, collections, regex
+Developed and tested with Python3.
