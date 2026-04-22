@@ -27,4 +27,4 @@ getopt\
 time\
 pysam\
 collections\
-regex\
+regex
