@@ -165,7 +165,7 @@ def parse_bam(file_in, file_out, file_sat_reads_bam, file_tel_reads_bam, min_num
 
     # summarize and write out results
     file = open(file_out, 'w')
-    file.write("molecule_id\tn_reads\tn_tel\tn_sat\tn_sat_tel\treads_sat_aln\treads_tel_aln\n")
+    file.write("molecule_id\tn_reads\tn_tel\tn_sat\treads_sat_aln\treads_tel_aln\n")
 
     for i in range(max_n_mol):
         # only use and count molecules with at least two reads
@@ -180,7 +180,7 @@ def parse_bam(file_in, file_out, file_sat_reads_bam, file_tel_reads_bam, min_num
                 n_sattel_mol += 1
                 pos_sat = ",".join(pos_sat_mol[i])
                 pos_tel = ",".join(pos_tel_mol[i])
-                file.write(f"{i}\t{count_reads_per_mol[i]}\t{count_tel_per_mol[i]}\t{count_sat_per_mol[i]}\t{count_sattel_per_mol[i]}\t{pos_sat}\t{pos_tel}\n")
+                file.write(f"{i}\t{count_reads_per_mol[i]}\t{count_tel_per_mol[i]}\t{count_sat_per_mol[i]}\t{pos_sat}\t{pos_tel}\n")
 
     file.close()
 
