@@ -19,3 +19,12 @@ Optional parameters:
 | `-t, --min_num_tel` | Minimum number of telomeric repeats TTAGGG within a read to be counted as telomeric (default 4)|
 | `-s, --min_num_sat` | Minimum number of telomeric reads within a molecule (default 1)|
 | `-m, --max_mm_sat` | Maximum number of allowed mismatches when detecting the 17bp alpha-satellite motif (default 2)|
+
+Python package requirements:
+
+sys\
+getopt\
+time\
+pysam\
+collections\
+regex\
